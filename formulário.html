@@ -1,53 +1,133 @@
 <!DOCTYPE html>
 <hmtl>
-        <head>
-            <title>Forms</title> 
-        </head>
-        <body>
-            <h2>Conceitos sobre HTML</h2>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="lista.html">Lista</a>
-                </li>
-                <li>
-                    <a href="tabela.html">Tabela</a>
-                </li>
-                <li>
-                    <a href="imagem.html">Imagem</a>
-                </li>
-            </ul>
-            <p>Este site é um resumo sobre os conceitos de formulários do HTML!</p>>
-            <h2>Formulários</h2>
-            <form>
-                <div>
-                    <label for="nome">Nome: </label>
-                    <input type="text">
-                </div>
-                <br>
-                <div>
-                    <label for="idade">Idade: </label>
-                    <input type="number" min="0" max="120">
-                </div>
-                <br>
-                <div>
-                    <label for="Usuario">Usuario: </label>
-                    <input type="text">
-                </div>
-                <br>
-                <div>
-                    <label for="senha">Senha:</label>
-                    <input type="password">
-                </div>
-                <br>
-                <div>
-                    <label for="dataEvento">Data do Evento:</label>
-                    <input type="datetime-local">
-                </div>
-                <br>
-                <button type="submit">Enviar</button>
-            </form>
-        </body>
+
+    <head>
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <h2>Conceitos sobre HTML</h2>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="lista.html">Lista</a>
+            </li>
+            <li>
+                <a href="tabela.html">Tabela</a>
+            </li>
+            <li>
+                <a href="imagem.html">Imagem</a>
+            </li>
+        </ul>
+        <p>Este site é um resumo sobre os conceitos de formulários do HTML!</p>>
+        <h2>Formulários</h2>
+        <form>
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text">
+            </div>
+            <br>
+            <div>
+                <label for="idade">Idade: </label>
+                <input type="number" min="0" max="120">
+            </div>
+            <br>
+            <div>
+                <label for="Usuario">Usuario: </label>
+                <input type="text">
+            </div>
+            <br>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password">
+            </div>
+            <br>
+            <div>
+                <label for="dataEvento">Data do Evento:</label>
+                <input type="datetime-local">
+            </div>
+            <br>
+
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="tel" required placeholder="(XX)XXXXX-XXXX">
+            </div>
+            <br>
+            <div>
+                <label for="peso">Peso: </label>
+                <input type="number" min="0" max="120" step="0.25">
+            </div>
+            <br>
+            <div>
+                <label for="volume">Volume</label>
+                <input type="range" min="0" max="100" step="0.5">
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Estado Civil</legend>
+                    <p>
+                        <label>
+                            <input type="radio" name="est_civil" value="casado">
+                            " Casado: "
+                        </label>
+                    <p>
+                        <label>
+                            <input type="radio" name="est_civil" value="solteiro">
+                            " Solteiro: "
+                        </label>
+                    <p></p>
+                    <label>
+                        <input type="radio" name="est_civil" value="divorciado">
+                        " divorciado: "
+                    </label>
+                    <p>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Produtos</legend>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="computador" value="Computador"> Computador
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="monitor" value="Monitor"> Monitor
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="impressora" value="Impressora"> Impressora
+                        </label>
+                    </p>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <label>
+                    Deixe sua sugestão: <br>
+                    <textarea cols="30" rows="5"></textarea>
+                </label>
+            </div>
+            <br>
+            <div>
+                <p>
+                    <label>
+                        Sites: <input type="url" list="sites" name="link">
+                    </label>
+                </p>
+                <datalist id="sites">
+                    <option label="Site muito bom" value="https://youtu.be/dQw4w9WgXcQ?si=5fGzffq32JLDXu-t"></option>
+                    <option label="Youtube" value="https://www.youtube.com/"></option>
+                </datalist>
+            </div>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
 </hmtl>
