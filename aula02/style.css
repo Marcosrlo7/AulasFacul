@@ -1,0 +1,32 @@
+.p1{
+    text-align: center;
+}
+.p2{
+    text-align: left;
+}
+.p3{
+    text-align: center;
+}
+p.borda{
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+}
+p.margem{
+    margin: 25px;
+}
+p.propriedades{
+    margin: 25px;
+    border-style: dotted;
+    padding: 20px;
+}
+p.contorno{
+    outline-style: double;
+    outline-color: green;
+    margin: 40px;
+    border-color: black;
+    padding: 15px
+}
+.center{
+    text-align: center;
+}
